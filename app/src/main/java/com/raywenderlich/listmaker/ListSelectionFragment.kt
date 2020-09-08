@@ -74,6 +74,7 @@ class ListSelectionFragment : Fragment(), ListSelectionRecyclerViewAdapter.ListS
     fun saveList(list: TaskList){
         listDataManager.saveList(list)
         updateLists()
+
     }
 
     private fun updateLists(){
