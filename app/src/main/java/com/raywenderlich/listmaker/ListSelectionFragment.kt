@@ -54,7 +54,7 @@ class ListSelectionFragment : Fragment(), ListSelectionRecyclerViewAdapter.ListS
 
         val lists = listDataManager.readLists()
         view?.let {
-            listsRecyclerView = it.findViewById<RecyclerView>(R.id.lists_recyclerview)
+            listsRecyclerView = it.findViewById<RecyclerView>(R.id.list_items_recyclerview)
             listsRecyclerView.layoutManager = LinearLayoutManager(activity)
             listsRecyclerView.adapter = ListSelectionRecyclerViewAdapter(lists, this)
         }
